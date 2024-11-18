@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Archivio Grigio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="archiviogrigio.svg">
+</head>
+<body>
+
+  <!-- Overlay per sbiadire il resto della pagina -->
+  <div id="overlay"></div>
+
+  <main>
+    <section class="projects">
+      <!-- Aggiungi le 50 immagini qui -->
+      <div class="project-box draggable"><img src="320.png" alt="Project 1"></div>
+      <div class="project-box draggable"><img src="320.png" alt="Project 2"></div>
+      <div class="project-box draggable"><img src="320.png" alt="Project 3"></div>
+      <div class="project-box draggable"><img src="320.png" alt="Project 4"></div>
+      <div class="project-box draggable"><img src="320.png" alt="Project 5"></div>
+      <div class="project-box draggable"><img src="320.png" alt="Project 6"></div>
+
+      <!-- Continua ad aggiungere immagini -->
+    </section>
+
+    <section class="description">
+      <p>
+        Archivio Grigio is an animation studio founded by Riccardo. It operates as an experimental practice, focusing on research, production, and design.
+      </p>
+
+      <!-- Testo For inquiries... posizionato sotto i bottoni -->
+      <p class="inquiries-text">
+        For inquiries: mail@archiviogrigio.com
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>©2024 <span class="footer-divider">Archivio Grigio</span></p>
+
+    <div class="button-container">
+      <button id="worksButton">
+        <span class="works-text">Works</span>
+      </button>
+
+      <button id="radioButton">
+        <span class="radio-text">Radio</span>
+      </button>
+    </div>
+
+    <!-- Rettangolo espanso per il pulsante Radio -->
+    <div id="radioBox" class="radio-box"></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

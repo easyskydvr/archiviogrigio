@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #d3d3d3; /* Sfondo grigio */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  padding: 0;
+  margin: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.projects {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+.project-box {
+  position: absolute;
+  cursor: grab;
+  width: 400px;
+  height: 400px;
+  z-index: 2;
+}
+
+.project-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+/* Descrizione in alto a sinistra */
+.description {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-align: left;
+  z-index: 1;
+}
+
+.description p {
+  font-size: 24px;
+  line-height: 1.2;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #000;
+}
+
+/* Testo per le inquiries sotto la descrizione */
+.inquiries-text {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #000;
+  font-family: "Helvetica", Arial, sans-serif;
+}
+
+/* Footer styles */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px 20px;
+  font-family: "Helvetica", sans-serif;
+  font-size: 24px;
+  color: #000000;
+  background-color: #d3d3d3; /* Modifica lo sfondo del footer in grigio */
+  position: relative;
+}
+
+footer p {
+  margin: 0;
+}
+
+.footer-divider {
+  margin-left: 10px;
+}
+
+/* Contenitore per i bottoni Works e Radio posizionato in basso a destra nel footer */
+.button-container {
+  display: flex;
+  flex-direction: row; /* Allineamento orizzontale */
+  gap: 10px; /* Distanza tra i bottoni */
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+#worksButton,
+#radioButton {
+  padding: 10px 20px;
+  font-family: "Helvetica", Arial, sans-serif;
+  font-size: 20px;
+  background-color: #ffffff;
+  color: #000;
+  border: none;
+  border-radius: 30px;
+  box-shadow: inset -3px -3px 6px rgba(0, 0, 0, 0.3),
+              inset 3px 3px 6px rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  width: fit-content;
+}
+
+#worksButton:hover,
+#radioButton:hover {
+  background-color: #f0f0f0;
+}
+
+/* Stile per il rettangolo espanso del pulsante Radio */
+.radio-box {
+  position: absolute;
+  bottom: 60px;
+  right: 20px;
+  width: 0;
+  height: 0;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: inset -3px -3px 6px rgba(0, 0, 0, 0.3),
+              inset 3px 3px 6px rgba(255, 255, 255, 0.6);
+  transition: all 0.3s ease;
+  z-index: 2;
+  opacity: 0;
+}
+
+.radio-box.active {
+  width: 300px;
+  height: 300px;
+  opacity: 1;
+}
